@@ -91,7 +91,7 @@ function App() {
     <div className="App">
       <Navbar connectWallet={connectWallet} account={account} />
       <div className="contents">
-        <LeftCom togglePop={togglePop} toggle={toggle} />
+        <LeftCom togglePop={togglePop} toggle={toggle} contract={contract}/>
         <div className="posts">
           {uploadedPosts ? (
             uploadedPosts

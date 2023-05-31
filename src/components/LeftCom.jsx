@@ -1,22 +1,11 @@
 import React from "react";
 import "./LeftCom.css";
+import LeftCard from "./LeftCard";
 
-function LeftCom({ togglePop }) {
+function LeftCom({ togglePop, toggle, contract }) {
   return (
     <div className="LeftCom">
-      <div className="leftCard">
-        <div className="images">
-          {/* eslint-disable-next-line */}
-          <img
-            className="coverImg"
-            src={require("./images/Why-Are-Gas-Fees-So-High-and-How-Can-You-Avoid-Them.jpg")}
-          />
-          <div className="profileImg">
-            {/* eslint-disable-next-line */}
-            <img className="profileImage" src={require("./images/bhai.png")} />
-          </div>
-        </div>
-      </div>
+      <LeftCard contract={contract}/>
       <div className="createPostBtn">
         <button onClick={togglePop}>
           Create Post
